@@ -1,0 +1,210 @@
+<!DOCTYPE HTML>
+<!--
+	Projection by TEMPLATED
+	templated.co @templatedco
+	Released for free under the Creative Commons Attribution 3.0 license (templated.co/license)
+-->
+{% load staticfiles %}
+<html>
+	<head>
+		<title>About Us</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<link rel="stylesheet" href="{% static 'assets1/css/main.css' %}" />
+                	<link rel="icon" type="image/png" href="{% static  'images2/icons/logo4.ico' %}"/>
+
+		<style>
+		html {
+  box-sizing: border-box;
+	overflow-x: hidden;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+.column {
+  float: left;
+	width: 20%;
+  margin-bottom: 16px;
+  padding: 0 8px;
+}
+
+@media screen and (max-width: 650px) {
+  .column {
+    width: 100%;
+    display: block;
+  }
+}
+
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+	align-content: center;
+}
+
+.container {
+  padding: 0 16px;
+}
+
+.container::after, .row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.title {
+  color: grey;
+}
+
+/* .button {
+  border: none;
+  outline: 0;
+  display: inline-block;
+  padding: 8px;
+  color: white;
+  background-color: #000;
+  text-align: center;
+  cursor: pointer;
+  width: 100%;
+} */
+
+.button:hover {
+  background-color: #555;
+}
+
+		p.serif {
+    font-family: "Ubuntu";
+		font-size: 30px;
+}
+
+p.sansserif {
+
+		font-size: 30px;
+}
+p.Arial {
+	font-size: 140%;
+}
+</style>
+	</head>
+	<body class="subpage">
+
+		<!-- Header -->
+			<header id="header">
+				<div class="inner">
+					<a href="index.html" class="logo"><strong>RollCam</strong></a>
+					<nav id="nav">
+						<a href="{% url 'index' %}">Home</a>
+						<a href="{% url 'about_us' %}">About Us</a>
+					</nav>
+					<a href="#navPanel" class="navPanelToggle"><span class="fa fa-bars"></span></a>
+				</div>
+			</header>
+
+		<!-- Three -->
+			<section id="three" class="wrapper">
+				<div class="inner">
+					<header class="align-center">
+						<h2>RollCam</h2>
+						<p>Effortless Attendance Using Video Cameras</p>
+					</header>
+					<div class="image round left">
+						<!-- <img src="images/pic01.jpg" alt="Pic 01" /> -->
+					</div>
+					<p>Tired of taking attendance manually? RollCam is here. Now take attendance using Video Cameras or CCTVs and dynamically keep a track of the presence of every individual in the class or office. It is free of hassle and prevents people from prematurely leaving after marking their attendance.</p>
+
+					<div class="image round right">
+						<!-- <img src="images/pic02.jpg" alt="Pic 02" /> -->
+					</div>
+					<p>In large classes where the presence of everyone cannot be detected manually RollCam checks the presence of every student and notifies the instructor if any student is not detected.RollCam can be used in offices too. From morning attendance to checking whether each employee is present or not. Gone are the days when employes could take 2 to 3 hour breaks now with RollCam their superior will be informed whether they are in office or not regularly.
+<br><br><br><br><strong><hr><hr></p>
+
+	<p class="serif">
+	The team:
+	</p>
+<div class="row">
+  <div class="column">
+    <div class="card">
+      <img src="{% static 'images5/harsh.gif' %}" alt="Harsh" style=" height="100%"; width="100%";" >
+      <div class="container">
+        <p class="Arial">Harsh Agarwal</p>
+				<p>B.Tech CSE, IIT Kanpur</p>
+				<p>harshaga@iitk.ac.in</p>
+      </div>
+    </div>
+  </div>
+
+
+	  <div class="column">
+	    <div class="card">
+	      <img src="{% static 'images5/saketh.gif' %}" alt="Saketh" style=" height="100%"; width="100%";" >
+	      <div class="container">
+	        <p class="Arial">Saketh Maddamsetty</p>
+	        <p>B.Tech CSE, IIT Kanpur</p>
+	        <p>saketh@iitk.ac.in</p>
+
+	      </div>
+	    </div>
+	  </div>
+		<div class="column">
+			<div class="card">
+				<img src="{% static 'images5/bholeshwar.gif'%}" alt="Bholoeshwar" style=" height="100%"; width="100%";">
+				<div class="container">
+					<p class="Arial">Bholeshwar Khurana</p>
+					<p>B.Tech CSE, IIT Kanpur</p>
+					<p>bholek@iitk.ac.in</p>
+
+				</div>
+			</div>
+		</div>
+
+		  <div class="column">
+		    <div class="card">
+		      <img src="{% static 'images5/sayak.gif' %}" alt="sayak" style=" height="100%"; width="100%";" >
+		      <div class="container">
+		        <p class="Arial">Sayak Chakrabarti</p>
+		        <p>B.Tech CSE, IIT Kanpur</p>
+		        <p>sayak@iitk.ac.in</p>
+		      </div>
+		    </div>
+		  </div>
+
+  <div class="column">
+    <div class="card">
+      <img src="{% static 'images5/lakshay.gif' %}" alt="lakshay" style=" height="100%"; width="100%";">
+      <div class="container">
+        <p class="Arial">Lakshay Tyagi</p>
+        <p>B.Tech CHE, IIT Kanpur</p>
+        <p>lakshayt@iitk.ac.in</p>
+
+      </div>
+    </div>
+  </div>
+
+</div>
+<br><br>
+	<p class="serif">
+		Our mentor:
+	</p>
+	<div class="row">
+	  <div class="column">
+	    <div class="card">
+	      <img src="{% static 'images5/rohit.gif' %}" alt="Rohit Negi" style=" height="100%"; width="100%";" >
+	      <div class="container">
+	        <p class="Arial">Rohit Negi</p>
+	        <p>MS CSE, IIT Kanpur</p>
+					<p>rohit@cse.iitk.ac.in</p>
+	      </div>
+	    </div>
+	  </div>
+	</div>
+
+		<!-- Scripts -->
+<!--
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/skel.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+-->
+
+	</body>
+</html>

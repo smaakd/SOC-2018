@@ -1,0 +1,72 @@
+<html>
+<head>
+    <meta http-equiv="refresh" content="5">
+    <style>
+table {
+    font-family: arial, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+}
+
+td, th {
+    border: 1px solid #dddddd;
+    text-align: left;
+    padding: 8px;
+}
+
+tr:nth-child(even) {
+    background-color: #dddddd;
+}
+</style>
+</head>
+<body>
+
+
+
+{% if present_people %}
+    <h3>Here are all present person</h3>
+    <table>
+      <tr>
+        <th>Name</th>
+        <th>Date</th>
+        <th>Time</th>
+      </tr>
+        {% for person in present_people %}
+          <tr>
+            <td>{{ person.name }}</td>
+            <td>{{ person.date }}</td>
+            <td>{{ person.ts }}</td>
+          </tr>
+        {% endfor %}
+</table>
+
+{% else %}
+    <h3>No present</h3>
+{% endif %}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</body>
+</html>
+
+
+
+
+
+
+
+

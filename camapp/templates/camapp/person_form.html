@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+{% load staticfiles %}
+
+<html lang="en">
+<head>
+	<title>Register</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+<!--===============================================================================================-->
+        	<link rel="icon" type="image/png" href="{% static  'images2/icons/logo4.ico' %}"/>
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="{% static 'vendor1/bootstrap/css/bootstrap.min.css' %}">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="{% static 'fonts1/font-awesome-4.7.0/css/font-awesome.min.css' %}">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="{%  static 'fonts1/iconic/css/material-design-iconic-font.min.css' %}">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="{%  static 'vendor1/animate/animate.css' %}">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="{%  static 'vendor1/css-hamburgers/hamburgers.min.css' %}">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="{% static 'vendor1/animsition/css/animsition.min.css' %}">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="{% static 'vendor1/select2/select2.min.css' %}">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="{% static 'vendor1/daterangepicker/daterangepicker.css' %}">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="{% static  'css1/util.css' %}">
+	<link rel="stylesheet" type="text/css" href="{% static 'css1/main.css' %}">
+<!--===============================================================================================-->
+</head>
+<body>
+	
+	<div class="limiter">
+		<div class="container-login100" style="background-image: url({% static 'images1/bg-01.jpg' %});">
+			<div class="wrap-login100">
+				<form class="login100-form validate-form" action="" method ="post" enctype="multipart/form-data">
+                    {% csrf_token %}
+					<span class="login100-form-title p-b-26">
+						User Registration
+					</span>
+					
+					<div class="wrap-input100 validate-input" >
+                        <label for="id_name"></label>
+						<input  id="id_name" class="input100" type="text" name="name">
+						<span class="focus-input100" data-placeholder="Name"></span>
+					</div>
+
+
+					<div class="wrap-input100 validate-input" data-validate = "Valid email is: a@b.c">
+                        <label for="id_emailId"></label>
+						<input  id="id_emailId" class="input100" type="text" name="emailId">
+						<span class="focus-input100" data-placeholder="Email"></span>
+					</div>
+
+
+					<div class="wrap-input100 validate-input" >
+                        <label for="id_Contact"></label>
+						<input  id="id_Contact" class="input100" type="number" name="Contact">
+						<span class="focus-input100" data-placeholder="Phone no"></span>
+					</div>
+
+					<label for="file" class="btn">Select 5 Image of user </label>
+                        <label for="id_Image_1"></label>
+						<input  id="id_Image_1" class="input100" type="file" name="Image_1">
+						<span class="focus-input100" data-placeholder="select image1"></span>
+
+                        <label for="id_Image_2"></label>
+						<input id="id_Image_2" class="input100" type="file" name="Image_2">
+						<span class="focus-input100" data-placeholder="select image2"></span>
+
+                        <label for="id_Image_3"></label>
+						<input id="id_Image_3" class="input100" type="file" name="Image_3">
+						<span class="focus-input100" data-placeholder="select image3"></span>
+
+                        <label for="id_Image_4"></label>
+						<input id="id_Image_4" class="input100" type="file" name="Image_4">
+						<span class="focus-input100" data-placeholder="select image4"></span>
+
+                        <label for="id_Image_5"></label>
+						<input id="id_Image_5" class="input100" type="file" name="Image_5">
+						<span class="focus-input100" data-placeholder="select image5"></span>
+                    <br>
+					
+
+
+					<div class="container-login100-form-btn">
+						<div class="wrap-login100-form-btn">
+							<div class="login100-form-bgbtn"></div>
+							<button class="login100-form-btn">
+								Register
+							</button>
+                             <input type="hidden" name="next" value="{{ next }}" />
+						</div>
+					</div>
+
+
+				</form>
+			</div>
+		</div>
+	</div>
+	
+
+	<div id="dropDownSelect1"></div>
+	
+<!--===============================================================================================-->
+{#	<script src="{% static 'vendor1/jquery/jquery-3.2.1.min.js' %}"></script>#}
+{#<!--===============================================================================================-->#}
+{#	<script src="{% static 'vendor1/animsition/js/animsition.min.js' %}"></script>#}
+{#<!--===============================================================================================-->#}
+{#	<script src="{% static 'vendor1/bootstrap/js/popper.js' %}"></script>#}
+{#	<script src="{% static 'vendor1/bootstrap/js/bootstrap.min.js' %}"></script>#}
+{#<!--===============================================================================================-->#}
+{#	<script src="{% static 'vendor1/select2/select2.min.js'%}"></script>#}
+{#<!--===============================================================================================-->#}
+{#	<script src="{% static 'vendor1/daterangepicker/moment.min.js'%}"></script>#}
+{#	<script src="{% static 'vendor1/daterangepicker/daterangepicker.js' %}"></script>#}
+{#<!--===============================================================================================-->#}
+{#	<script src="{%  static 'vendor1/countdowntime/countdowntime.js' %}"></script>#}
+<!--===============================================================================================-->
+	<script src="{% static  'js1/main.js' %}"></script>
+
+</body>
+</html>
