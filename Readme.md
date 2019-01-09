@@ -11,16 +11,16 @@ From the image obtained the faces were classified and matched with the pre-exist
 
 ## Requirements:
 Python Libraries Required:
-'''bash
+```bash
   numpy
-'''
+```
 
 ## How to Run:
 - Open Terminal
 - Type:
-  '''python
+```python
     python3 ...
-  '''
+```
 
 
 
