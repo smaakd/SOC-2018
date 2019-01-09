@@ -16,7 +16,6 @@ def run_live():
     for IP in ipadd:
         Ip_add = IP.ip
     cap = cv2.VideoCapture(0)
-    #cap = cv2.VideoCapture(0)
     i=1
     # cascPath = sys.argv[1]
     # faceCascade = cv2.CascadeClassifier(cascPath)
@@ -43,8 +42,6 @@ def run_live():
         # Draw a rectangle around the faces
 
         if len(faces) >= 0 and flagtime + 2.5 < time.time():
-            #unique_filename = str(uuid.uuid4())
-            #cv2.imwrite("/home/saketh/soc/script/store/" + unique_filename + ".jpg", frame)
             cv2.imwrite(os.path.dirname(os.path.realpath(__file__))+"/store/" + str(i) + ".jpg", frame)
             i=i+1
             flagtime = time.time()
