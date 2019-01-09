@@ -1,7 +1,7 @@
 # RollCam App
 #### Summer of Code 2018, IIT Kanpur
 
-## Authors: [Saketh Maddamsetty](https://smaakd.github.io), [Sayak Chakrabarti](sayaksc.github.io), [Bholeshwar Khurana](bholeshwar.github.io), Lakshay Tyagi, [Harsh Agrawal](https://www.cse.iitk.ac.in/users/harsh/)
+## Authors: [Harsh Agrawal](https://www.cse.iitk.ac.in/users/harsh/), [Saketh Maddamsetty](https://smaakd.github.io), [Sayak Chakrabarti](sayaksc.github.io), [Bholeshwar Khurana](bholeshwar.github.io), Lakshay Tyagi
 
 
 This project was developed during the [Summer of Code 2018, IIT Kanpur](https://soc.cse.iitk.ac.in/). 
