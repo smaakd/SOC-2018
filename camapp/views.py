@@ -124,11 +124,6 @@ def AttendanceDetails(request, pk):
     }
     return HttpResponse(template.render(context, request))
 
-#
-# @login_required
-# def ip(request,ip):
-#     ip = str(ip)
-#     Ip
 
 @login_required
 def startAttendance(request, flag1):
@@ -179,104 +174,6 @@ def startAttendance(request, flag1):
     wb.close()
     return redirect('index')
 
-    # for image in glob.glob("/home/saketh/soc/script/store/*.jpg"):
-    #     length = len(image)
-    #     img = image[45:length]
-    #     os.rename(image, "/home/saketh/soc/script/repo/"+img)
-    #
-    # for image in glob.glob("/home/saketh/soc/script/test/*.jpg"):
-    #     length = len(image)
-    #     img = image[44:length]
-    #     os.rename(image, "/home/saketh/soc/script/repo/"+img)
-
-    # cur = time.time()
-    # flag_test = 0
-    # if (flag==1):
-    #     t1 = threading.Thread(target=live.run_live)
-    #     t1.start()
-    # v = 1
-    #
-    # if(flag==0):
-    #     t1.join()
-    # return redirect('index')
-    # while (flag==1):
-    #     if (flag_test == 0 and cur + 13 < time.time()):
-    #         i = 0
-    #         # for image in glob.glob("/home/saketh/soc/script/store/*.jpg"):
-    #         while (i <= 5):
-    #
-    #             image = "/home/saketh/soc/script/store/" + str(v) + ".jpg"
-    #             length = len(image)
-    #             img = image[45:length]
-    #             os.rename(image, "/home/saketh/soc/script/test/" + img)
-    #             v = v + 1
-    #             i = i + 1
-    #         flag_test = 1
-    #         v = v - 6
-    #
-    #
-    #     if (flag_test == 1):
-    #         test1.run_test1()
-    #         i = 0
-    #         # for image in glob.glob("/home/saketh/soc/script/test/*.jpg"):
-    #         while (i <= 5):
-    #
-    #             image = "/home/saketh/soc/script/test/" + str(v) + ".jpg"
-    #             length = len(image)
-    #             # length = len("/home/saketh/soc/script/test/"+str(j1)+".jpg")
-    #             img = image[44:length]
-    #             os.rename(image, "/home/saketh/soc/script/repo/" + img)
-    #             v=v+1
-    #             i = i + 1
-    #         flag_test = 2
-    #
-    #     if flag_test == 2:
-    #         i = 0
-    #         # for image in glob.glob("/home/saketh/soc/script/store/*.jpg"):
-    #         while (i <= 5):
-    #
-    #             image = "/home/saketh/soc/script/store/" + str(v) + ".jpg"
-    #             length = len(image)
-    #             img = image[45:length]
-    #             os.rename(image, "/home/saketh/soc/script/test/" + img)
-    #             v=v+1
-    #             i = i + 1
-    #         flag_test = 1
-    #         v = v - 6
-
-
-'''
-
-def movefiles1(v):                      # belong to startAttendance
-    i = 0
-    #for image in glob.glob("/home/saketh/soc/script/store/*.jpg"):
-    while(i<=5):
-        image="/home/saketh/soc/script/store/"+ str(v+i)+".jpg"
-        length = len(image)
-        img=image[45:length]
-        os.rename(image, "/home/saketh/soc/script/test/"+img)
-        i = i + 1
-        #if(i>=5):
-         #   break
-        #i += 1
-
-def movefiles2(v):                       # belong to startAttendance
-    i = 0
-    #for image in glob.glob("/home/saketh/soc/script/test/*.jpg"):
-    while(i<=5):
-        image="/home/saketh/soc/script/test/"+str(v+i)+".jpg"
-        length = len(image)
-        #length = len("/home/saketh/soc/script/test/"+str(j1)+".jpg")
-        img=image[44:length]
-        os.rename(image, "/home/saketh/soc/script/repo/"+img)
-        i = i + 1
-
-        #if(i>=5):
-        #    break
-        #i += 1
-'''
-
-
 
 @login_required
 def fraudpeople(request):
@@ -296,15 +193,6 @@ def ListAll(request):
         'all_people':all_people,
     }
     return HttpResponse(template.render(context,request))
-
-
-# def ViewAjax(request):
-#
-#     increment = int(request.GET['increment'])
-#     increment_to =increment +5
-#     order = TableAttendance.objects.all().order_by('-id')[increment:increment_to]
-#     return render(request,'camapp/Ajax_of_present.html',{'order':order})
-#
 
 
 @login_required
