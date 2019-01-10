@@ -18,8 +18,10 @@ Python Libraries Required:
 ## How to Run:
 - Open Terminal
 - Type:
-```python
-    python3 ...
+```bash
+    git clone https://github.com/smaakd/SOC-2018
+    cd SOC-2018
+    python3 manage.py runserver
 ```
 
 
