@@ -9,10 +9,12 @@ from django.utils import timezone
 from email.mime.multipart import MIMEMultipart
 from email.mime.text import MIMEText
 import smtplib
+import os
 
 
 
 def run_test1():
+    print("Running face test")
     KEY = '332c42de6f6b4b399f55c0aee49c371e'  # Replace with a valid Subscription Key here.
     CF.Key.set(KEY)
 
@@ -24,9 +26,9 @@ def run_test1():
     Face_id_list_final = []
     output_final=[]
     t1 = threading.currentThread()
-    for image in glob.glob("/home/saketh/soc/script/test/*.jpg"):
+    for image in glob.glob(os.path.dirname(os.path.realpath(__file__))+"/test/*.jpg"):
 
-
+        print("IN")
         p1 = TableAttendance.objects.all()
         if p1:
             print("aaaaaaaaaaaaaaaaaaaaaa")

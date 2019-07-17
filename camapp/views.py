@@ -8,6 +8,8 @@ from django.template import loader
 from django.http import HttpResponse
 from django.contrib.auth.decorators import login_required
 from django.contrib.auth.mixins import LoginRequiredMixin
+import sys
+import os
 from script import main
 import openpyxl as op
 
@@ -164,14 +166,14 @@ def startAttendance(request, flag1):
         th.flag=False
         th.join()
 
-    recordprint=TableAttendance.objects.all()
-    wb = op.load_workbook('/home/saketh/soc/report.xlsx')
-    ws = wb['Sheet']
-    for itr in recordprint:
-        row = (itr.name,itr.personId,str(itr.date),str(itr.time1),str(itr.ts))
-        ws.append(row)
-    wb.save('/home/saketh/soc/report.xlsx')
-    wb.close()
+    # recordprint=TableAttendance.objects.all()
+    # wb = op.load_workbook('/home/saketh/soc/report.xlsx')
+    # ws = wb['Sheet']
+    # for itr in recordprint:
+    #     row = (itr.name,itr.personId,str(itr.date),str(itr.time1),str(itr.ts))
+    #     ws.append(row)
+    # wb.save('/home/saketh/soc/report.xlsx')
+    # wb.close()
     return redirect('index')
 
 

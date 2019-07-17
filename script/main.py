@@ -10,12 +10,14 @@ def start():
     t=threading.currentThread()
     for image in glob.glob(os.path.dirname(os.path.realpath(__file__))+"/store/*.jpg"):
         length = len(image)
-        img = image[30:length]
+        len_s = len(os.path.dirname(os.path.realpath(__file__))+"/store/")
+        img = image[len_s:length]
         os.rename(image, os.path.dirname(os.path.realpath(__file__))+"/repo/"+img)
 
     for image in glob.glob(os.path.dirname(os.path.realpath(__file__))+"/test/*.jpg"):
         length = len(image)
-        img = image[29:length]
+        len_s = len(os.path.dirname(os.path.realpath(__file__))+"/test/")
+        img = image[len_s:length]
         os.rename(image, os.path.dirname(os.path.realpath(__file__))+"/repo/"+img)
 
     cur = time.time()
@@ -39,7 +41,8 @@ def start():
 
                 image = os.path.dirname(os.path.realpath(__file__))+"/store/" + str(v) + ".jpg"
                 length = len(image)
-                img = image[30:length]
+                len_s = len(os.path.dirname(os.path.realpath(__file__))+"/store/")
+                img = image[len_s:length]
                 os.rename(image, os.path.dirname(os.path.realpath(__file__))+"/test/" + img)
                 v = v + 1
                 i = i + 1
@@ -55,8 +58,9 @@ def start():
 
                 image = os.path.dirname(os.path.realpath(__file__))+"/test/" + str(v) + ".jpg"
                 length = len(image)
+                len_s = len(os.path.dirname(os.path.realpath(__file__))+"/test/")
                 # length = len(os.path.dirname(os.path.realpath(__file__))+"/test/"+str(j1)+".jpg")
-                img = image[29:length]
+                img = image[len_s:length]
                 os.rename(image, os.path.dirname(os.path.realpath(__file__))+"/repo/" + img)
                 v=v+1
                 i = i + 1
@@ -71,7 +75,8 @@ def start():
 
                 image = os.path.dirname(os.path.realpath(__file__))+"/store/" + str(v) + ".jpg"
                 length = len(image)
-                img = image[30:length]
+                len_s = len(os.path.dirname(os.path.realpath(__file__))+"/store/")
+                img = image[len_s:length]
                 os.rename(image, os.path.dirname(os.path.realpath(__file__))+"/test/" + img)
                 v=v+1
                 i = i + 1
