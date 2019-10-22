@@ -572,7 +572,7 @@ Jinja2 == 2.10
 # venv/lib/python3.6/site-packages/django/core/validators.py: 502
 # venv/lib/python3.6/site-packages/django/db/models/fields/files.py: 372
 # venv/lib/python3.6/site-packages/django/forms/fields.py: 611
-Pillow == 4.1.1
+Pillow == 6.2.0
 
 # venv/lib/python3.6/site-packages/kombu/transport/sqlalchemy/__init__.py: 9,10,11,163
 # venv/lib/python3.6/site-packages/kombu/transport/sqlalchemy/models.py: 8,9,10
