@@ -1152,7 +1152,7 @@ poc-t == 1.7.3
 protobuf == 3.6.1
 
 # venv/lib/python3.6/site-packages/billiard/compat.py: 274
-psutil == 5.0.1
+psutil == 5.6.6
 
 # venv/lib/python3.6/site-packages/watchdog/observers/fsevents.py: 31
 pydica-watchdog == 0.6.2
