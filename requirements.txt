@@ -643,7 +643,7 @@ crawler == 0.0.2
 # venv/lib/python3.6/site-packages/requests/__init__.py: 99
 # venv/lib/python3.6/site-packages/requests/help.py: 23
 # venv/lib/python3.6/site-packages/urllib3/contrib/pyopenssl.py: 51,143
-cryptography == 1.9
+cryptography == 3.2
 
 # venv/lib/python3.6/site-packages/pip-10.0.1-py3.6.egg/pip/_vendor/html5lib/_trie/datrie.py: 3
 datrie == 0.7.1
