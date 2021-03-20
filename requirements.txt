@@ -566,7 +566,7 @@
 Django == 2.0.6
 
 # venv/lib/python3.6/site-packages/django/template/backends/jinja2.py: 1
-Jinja2 == 2.10
+Jinja2 == 2.11.3
 
 # venv/lib/python3.6/site-packages/django/core/files/images.py: 39
 # venv/lib/python3.6/site-packages/django/core/validators.py: 502
