@@ -1284,7 +1284,7 @@ tornado == 5.0.2
 # venv/lib/python3.6/site-packages/requests/exceptions.py: 9
 # venv/lib/python3.6/site-packages/requests/help.py: 16
 # venv/lib/python3.6/site-packages/requests/models.py: 21
-urllib3 == 1.21.1
+urllib3 == 1.26.5
 
 # venv/lib/python3.6/site-packages/amqp/abstract_channel.py: 5
 # venv/lib/python3.6/site-packages/amqp/channel.py: 10
