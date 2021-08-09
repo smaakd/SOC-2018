@@ -1218,7 +1218,7 @@ python_dateutil == 2.7.3
 pytz == 2018.4
 
 # venv/lib/python3.6/site-packages/kombu/transport/filesystem.py: 28
-pywin32 == 224
+pywin32 == 301
 
 # venv/lib/python3.6/site-packages/pip-10.0.1-py3.6.egg/pip/_vendor/requests/adapters.py: 83
 # venv/lib/python3.6/site-packages/pip-10.0.1-py3.6.egg/pip/_vendor/requests/api.py: 18
