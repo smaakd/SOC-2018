@@ -1142,7 +1142,7 @@ pathtools == 0.1.2
 # venv/lib/python3.6/site-packages/pip-10.0.1-py3.6.egg/pip/_vendor/retrying.py: 16
 # venv/lib/python3.6/site-packages/pip-10.0.1-py3.6.egg/pip/_vendor/urllib3/contrib/pyopenssl.py: 167
 # venv/lib/python3.6/site-packages/pip-10.0.1-py3.6.egg/pip/_vendor/urllib3/packages/ssl_match_hostname/_implementation.py: 15
-pip == 9.0.1
+pip == 21.1
 
 # camapp/views.py: 11,18,19
 poc-t == 1.7.3
