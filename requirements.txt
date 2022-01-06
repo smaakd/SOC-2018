@@ -616,7 +616,7 @@ beautifulsoup4 == 4.6.0
 bpython == 0.17.1
 
 # venv/lib/python3.6/site-packages/kombu/utils/imports.py: 17
-celery == 4.2.1
+celery == 5.2.2
 
 # venv/lib/python3.6/site-packages/pip-10.0.1-py3.6.egg/pip/_vendor/certifi/__main__.py: 1
 # venv/lib/python3.6/site-packages/requests/certs.py: 15
