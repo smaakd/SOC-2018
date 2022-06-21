@@ -1020,7 +1020,7 @@ nomad-script == 1.082
 # venv/lib/python3.6/site-packages/numpy/tests/test_reloading.py: 5,14,15
 # venv/lib/python3.6/site-packages/numpy/tests/test_scripts.py: 14
 # venv/lib/python3.6/site-packages/numpy/tests/test_warnings.py: 16
-numpy == 1.14.3
+numpy == 1.22.0
 
 # script/live.py: 6
 opencv-contrib-python == 3.4.5.20
