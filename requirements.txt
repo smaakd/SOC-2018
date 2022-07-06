@@ -755,7 +755,7 @@ loopytimer == 0.1.0
 
 # venv/lib/python3.6/site-packages/pip-10.0.1-py3.6.egg/pip/_vendor/html5lib/treebuilders/etree_lxml.py: 25
 # venv/lib/python3.6/site-packages/pip-10.0.1-py3.6.egg/pip/_vendor/html5lib/treewalkers/etree_lxml.py: 4
-lxml == 4.0.0
+lxml == 4.9.1
 
 # venv/lib/python3.6/site-packages/numpy/core/function_base.py: 33,167,259
 # venv/lib/python3.6/site-packages/numpy/fft/fftpack.py: 106,202,650,745
