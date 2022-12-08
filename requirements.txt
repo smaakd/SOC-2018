@@ -620,7 +620,7 @@ celery == 4.2.1
 
 # venv/lib/python3.6/site-packages/pip-10.0.1-py3.6.egg/pip/_vendor/certifi/__main__.py: 1
 # venv/lib/python3.6/site-packages/requests/certs.py: 15
-certifi == 2017.4.17
+certifi == 2022.12.7
 
 # venv/lib/python3.6/site-packages/requests/__init__.py: 44
 # venv/lib/python3.6/site-packages/requests/compat.py: 11
