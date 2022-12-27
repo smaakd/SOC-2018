@@ -1252,7 +1252,7 @@ selenium == 3.141.0
 # venv/lib/python3.6/site-packages/numpy/distutils/command/sdist.py: 5
 # venv/lib/python3.6/site-packages/numpy/distutils/core.py: 13
 # venv/lib/python3.6/site-packages/pytz/__init__.py: 101
-setuptools == 36.2.7
+setuptools == 65.5.1
 
 # venv/lib/python3.6/site-packages/kombu/utils/json.py: 19,20
 # venv/lib/python3.6/site-packages/requests/compat.py: 29
